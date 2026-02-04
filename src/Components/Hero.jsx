@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import profile from '../assets/hhh.jpg';
 import {
   FaCode,
   FaServer,
@@ -402,7 +403,8 @@ export default function Hero() {
                     {/* Profile Image or Placeholder */}
                     <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                       <div className="text-center">
-                        <div className="text-6xl mb-4">👨‍💻</div>
+                        <img src={profile} className="w-full h-full object-cover" alt="Profile" />
+                        {/* <div className="text-6xl mb-4">👨‍💻</div> */}
                         <div className="text-gray-400 text-sm">Your Amazing Photo Here</div>
                       </div>
                     </div>
